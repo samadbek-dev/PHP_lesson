@@ -1,9 +1,10 @@
-a=int(input())
-b=str(a)
-c=0
-for i in b:
-  c+=int(i)
-if c%2==0:
-  print("no")
-else:
-  print("yes")
+n=int(input())
+s=list(map(int,input().split()))
+d=sum(s)
+while d%10==0:
+    if  d-min(s)%10!=0:
+        print(d-min(s))
+        break
+    else:
+        s.remove(min(s))
+print(s)
