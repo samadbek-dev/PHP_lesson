@@ -7,6 +7,7 @@ function FunctionName() {
     echo $GLOBALS['baho'];
 
 }  
+echo "\n";
 FunctionName();
 echo $c;
  echo "\n";
