@@ -1,10 +1,11 @@
-n=int(input())
-s=list(map(int,input().split()))
-d=sum(s)
-while d%10==0:
-    if  d-min(s)%10!=0:
-        print(d-min(s))
-        break
-    else:
-        s.remove(min(s))
-print(s)
+k,a = map(int,input().split())
+s = list(map(int, input().split()))
+n = len(s)
+total_cuts = 0
+for i in range(n-1):
+    combined_power = s[i] + s[i+1]
+    if combined_power > k:
+        points_to_cut = combined_power - k
+        total_cuts += points_to_cut
+        s[i+1] = max(0, s[i+1] - points_to_cut)
+print(total_cuts)

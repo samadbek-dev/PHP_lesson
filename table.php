@@ -48,6 +48,7 @@ $people=[
         tr:nth-child(even) td { background: #fbfdff; }
         tr:last-child td { border-bottom: none; }
         td:first-child {
+                
             width: 40%;
             font-weight: 600;
             color: #374151;

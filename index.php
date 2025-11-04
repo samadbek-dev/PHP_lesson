@@ -12,4 +12,4 @@ FunctionName();
 echo $c;
  echo "\n";
 echo $_SERVER['2'];
-?>  
+?>

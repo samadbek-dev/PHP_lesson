@@ -1,0 +1,34 @@
+<?php
+// date (_default_timezone_set('Asia/Tashkent'));
+echo date('Y-m-d');
+echo "<br>";
+echo "bugun" . date('Y-m-d,l');
+echo date('Y/m/d');
+echo "<br>";
+echo date('Y.m.d');
+echo "<br>";
+echo date('Y_m_d');
+echo "<br>";
+echo date('Y');
+echo "<br>";
+echo date('H:i:sa');
+echo "<br>  ";
+$d=mktime(0,0,0,12,31,2023);
+echo date('Y-m-d h:i:sa',$d);
+$d1=strtotime("10:30pm April 15 2023");
+echo "<br>";
+echo date("Y-m-d h:i:sa",$d1);
+echo "<br>";
+$d2=strtotime("tomorrow");
+echo date("Y-m-d h:i:sa",$d2);
+echo "<br>";
+$d3=strtotime("+1 week");
+echo date("Y-m-d h:i:sa",$d3);
+echo "<br>";
+$d4=strtotime("+1 month");
+echo date("Y-m-d h:i:sa",$d4);
+echo "<br>";
+$d5=strtotime("+1 year");
+echo date("Y-m-d h:i:sa",$d5);
+echo "<br>";
+?>
